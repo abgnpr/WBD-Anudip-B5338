@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1</title>
+
+    <!-- external javascript file -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <input type="text" name="EnterName" id="1" required>
+        <input type="submit" onclick="A()" value="Go">
+    </form>
+
+    <!-- internal javascript -->
+    <script>
+        function A() {
+            document.write("Hello World")
+            alert("Hello world") // highest priority
+            alert("Hello pandu") // alerts executed in order
+        }
+    </script>
+    <!-- Note : Script inside body tag executes faster (fact unverified)-->
+
+</body>
+
+</html>

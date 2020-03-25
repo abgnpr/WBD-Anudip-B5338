@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JS 2</title>
+
+    <script>
+
+        // alert function
+
+        // math operators supported
+        // alert(7 + 8);
+
+        // string
+        // alert("7+8");
+        // alert("rahul");
+
+        // rahul is undefined
+        // alert(rahul + 8);
+
+        // casted to string -> "rahul8"
+        // alert("rahul" + 8);
+
+    </script>
+
+</head>
+
+<body>
+
+    <button type="button" onclick="myfunc()">Click here</button><br><br>
+    <script>
+        // alert inside a function
+        function myfunc() {
+            alert("Button was pressed")
+        }
+    </script>
+
+    <!-- external script can be added in both head and body -->
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+
+        // DATA TYPES
+
+        var a = 10;
+        var b = 20;
+        var c = (a + b);
+
+        document.write("Sum is : " + c);
+        document.write("<br>");
+        document.write("Sum is: " + (a + b)); // without brackets concatenation may occur
+        document.write("<br><br>");
+
+        var name = "Rahul Kumar";
+        var salary = 1000000
+
+        document.write("Name : " + name);
+        document.write("<br>");
+        document.write("Salary : " + salary);
+        document.write("<br><br>");
+
+
+        /* html code is totally valid inside the
+           quotes of `document.write()` */
+        document.write("<h1 style='color: blue'>Welcome</h1>");
+
+
+        // SCOPE of VARIABLES
+
+        var myGlobalVar = 500;
+        document.write(myGlobalVar);
+        document.write("<br>");
+
+        function somefunc() {
+            document.write(myGlobalVar);
+            document.write("<br>");
+
+            // var local to f()
+            var myLocalVar = 100; 
+        }
+
+        document.write(myLocalVar);
+        document.write("<br>");
+
+    </script>
+
+</body>
+
+</html>

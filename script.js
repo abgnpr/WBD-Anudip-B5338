@@ -1,0 +1,1 @@
+alert("This comes from external js file");

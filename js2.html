@@ -32,7 +32,7 @@
     <script>
         // alert inside a function
         function myfunc() {
-            alert("Button was pressed")
+            alert("Button was pressed");
         }
     </script>
 
@@ -72,13 +72,15 @@
         document.write(myGlobalVar);
         document.write("<br>");
 
-        function somefunc() {
+        function f() {
             document.write(myGlobalVar);
             document.write("<br>");
 
             // var local to f()
             var myLocalVar = 100; 
         }
+
+        f();
 
         document.write(myLocalVar);
         document.write("<br>");

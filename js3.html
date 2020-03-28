@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 3</title>
+</head>
+
+<body>
+    <script>
+        // try 99, 66, 101
+
+        // takes input as string
+        let a = prompt("Enter a num");
+        let b = prompt("Enter a num");
+        let c = prompt("Enter a num");
+        document.write((a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c));
+
+        // takes input as integer
+        let a = parseInt(prompt("Enter a num"));
+        let b = parseInt(prompt("Enter a num"));
+        let c = parseInt(prompt("Enter a num"));
+
+        document.write((a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JS 5 Functions</title>
+</head>
+
+<body>
+
+  <br><br><br><br>
+  <input type="submit" value="Say Hello" onclick="Hello()">
+
+  <br><br><br><br>
+  <input type="button" value="Hello Rahul" onclick="Welcome('Rahul', 25)">
+
+  <br><br><br><br>
+  <script>
+
+
+    // FUNCTION WITH NO PARAMETER
+    function Hello() {
+      alert("Hello Everyone!");
+    }
+
+
+
+    // FUNCTION WITH PARAMETER
+    function Welcome(name, age) {
+      document.writeln('Hello ' + name + ', your age: ' + age);
+    }
+
+
+
+    // FUNCTION WITH RETURN
+    function Sum(x, y) {
+      var sum;
+      sum = x + y;
+      return sum;
+    }
+
+    document.writeln('Sum of 10 and 20 = ' + Sum(10, 20) + '<br><br>');
+
+
+
+    // NESTED FUNCTION
+    function outer(a, b) { // parent 
+      function inner(x) { // child
+        return x*x;   
+      }
+      return inner(a) - inner(b);
+    }
+
+    document.writeln('Diff of squares of 3 and 2 =  ' + outer(3,2));
+    
+    // doesn't work! ; inner() not found in current scope
+    document.writeln('square of 3: ' + inner(3) + '<br><br>');
+
+  </script>
+</body>
+
+</html>

@@ -8,20 +8,19 @@
 <body>
     <script>
 
-        var key = prompt("Enter choice : ")
-
-        switch (key) {
-            case "Hi":
-                document.writeln("Hello!")
-                break;
-
-            case "Bye":
-                document.writeln("Goodbye!")
-                break;
-
-            default:
-                document.writeln("Duh!")
-                break;
+        var marks = prompt("Enter Your Obtained Marks: ");
+        if (marks <= 100) {
+            if (marks >= 60) {
+                document.write("1st Division");
+            } else if (marks >= 45) {
+                document.write("2nd Division");
+            } else if (marks >= 30) {
+                document.write("3rd Division");
+            } else {
+                document.write("Fail!!!");
+            }
+        } else {
+            document.write("Marks is greater than 100");
         }
 
     </script>

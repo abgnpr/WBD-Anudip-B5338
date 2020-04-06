@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ 1</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>I will not disappear.</p>
+    <p id="h">This is a line with id="h"</p>
+    <p class="l">This is a line with class="l"</p>
+    <button id="all">1. Hide all < p ></button>
+    <button id="hide_h">2. Hide id="h"</button>
+    <button class="hide_l">3. Hide class="l"</button>
+
+    <p id="hideself">Click me and I'll hide myself.</p>
+    <script>
+        $(document).ready(function () {
+            $("button#all").click(function () {
+                $("p").hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("button#hide_h").click(function () {
+                $("p#h").hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("button.hide_l").click(function () {
+                $("p.l").hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("p#hideself").click(function() {
+                $(this).hide();
+            });
+        });
+
+        // show and hide
+    </script>
+</body>
+
+</html>

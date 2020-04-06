@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ 2</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>This a heading.</h1>
+    <p id="1" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, blanditiis mollitia? Vitae quas officiis minus id voluptatem totam deleniti aperiam cum, consectetur impedit doloremque magni libero incidunt? Quis reprehenderit modi vero quaerat voluptatem aspernatur numquam sequi, odit ut quibusdam unde pariatur! Voluptas fuga debitis dolore sequi aspernatur inventore, excepturi maiores?</p>
+    <p id="2"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, blanditiis mollitia? Vitae quas officiis minus id voluptatem totam deleniti aperiam cum, consectetur impedit doloremque magni libero incidunt? Quis reprehenderit modi vero quaerat voluptatem aspernatur numquam sequi, odit ut quibusdam unde pariatur! Voluptas fuga debitis dolore sequi aspernatur inventore, excepturi maiores?</p>
+    <p id="3"" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, blanditiis mollitia? Vitae quas officiis minus id voluptatem totam deleniti aperiam cum, consectetur impedit doloremque magni libero incidunt? Quis reprehenderit modi vero quaerat voluptatem aspernatur numquam sequi, odit ut quibusdam unde pariatur! Voluptas fuga debitis dolore sequi aspernatur inventore, excepturi maiores?</p>
+    <p id="4"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, blanditiis mollitia? Vitae quas officiis minus id voluptatem totam deleniti aperiam cum, consectetur impedit doloremque magni libero incidunt? Quis reprehenderit modi vero quaerat voluptatem aspernatur numquam sequi, odit ut quibusdam unde pariatur! Voluptas fuga debitis dolore sequi aspernatur inventore, excepturi maiores?</p>
+
+    <script>
+        $(document).ready(function() {
+            $('p#1').fadeIn("fast", function() { alert("para 1 faded in")});
+            $('p#2').fadeOut(6000, function() { alert("para 2 faded out")});
+            $('p#3').fadeToggle("slow", function() { alert("para 3 faded in")});
+            $('p#4').fadeToggle(9000, function() { alert("para 4 faded out")});
+        })
+    </script>
+</body>
+
+</html>
